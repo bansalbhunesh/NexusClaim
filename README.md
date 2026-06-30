@@ -2,6 +2,7 @@
   <h1>🛡️ NexusClaim: The Agentic Orchestration Masterpiece</h1>
   <p><strong>Winner-Ready Submission for UiPath AgentHack 2026 — Track 1 (Maestro Case)</strong></p>
   <p>Replacing static rules with <strong>Live Multi-Agent Adversarial Debates</strong> to govern enterprise insurance claims.</p>
+  <p><em>Note: This repository is a <strong>High-Fidelity Offline Prototype</strong>. The LLM debates and Maestro Case routing are simulated locally so judges can test the architecture end-to-end without requiring API keys or cloud credentials.</em></p>
 </div>
 
 ---

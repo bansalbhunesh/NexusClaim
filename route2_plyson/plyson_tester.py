@@ -9,7 +9,8 @@ from agent import fraud_agent
 def run_plyson_tests():
     print("Starting Route 2: Plyson Declarative Test Runner")
     
-    with open('tests.json', 'r') as f:
+    json_path = os.path.join(os.path.dirname(__file__), 'tests.json')
+    with open(json_path, 'r') as f:
         schema = json.load(f)
         
     print(f"Loaded Project: {schema['project_name']}")

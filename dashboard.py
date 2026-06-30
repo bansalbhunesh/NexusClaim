@@ -10,6 +10,7 @@ if "cases" not in st.session_state:
 
 st.title("🛡️ NexusClaim: Multi-Agent Case Orchestration")
 st.markdown("UiPath Maestro Simulator with **Adversarial Red-Team Debate** for fraud detection.")
+st.warning("**[SIMULATION MODE]** This is a high-fidelity offline prototype. LLM debates and Maestro Case routing are simulated locally so judges can test the architecture without requiring API keys or cloud credentials.")
 
 # --- Sidebar for Intake ---
 with st.sidebar:

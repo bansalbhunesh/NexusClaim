@@ -9,7 +9,7 @@ from agent import fraud_agent
 def run_qa_evaluator():
     print("Starting Route 3: QA-Agent Data-Driven Evaluator")
     
-    csv_file = 'QASheet.csv'
+    csv_file = os.path.join(os.path.dirname(__file__), 'QASheet.csv')
     total_tests = 0
     passed_tests = 0
     
