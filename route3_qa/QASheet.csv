@@ -1,0 +1,6 @@
+claim_id,amount,description,expected_fraud
+QA-001,450.0,scratched door,False
+QA-002,12000.0,neck pain,True
+QA-003,150.0,broken mirror,False
+QA-004,25000.0,soft tissue damage and whiplash,True
+QA-005,9000.0,rear end collision normal damage,False

@@ -1,0 +1,38 @@
+{
+  "project_name": "NexusClaim_Route2_Plyson_Simulator",
+  "environments": ["dev", "prod"],
+  "test_suites": [
+    {
+      "suite_name": "Agent_Fraud_Boundary_Tests",
+      "test_cases": [
+        {
+          "test_name": "Low Risk Standard Claim",
+          "input": {
+            "claim_amount": 500.0,
+            "claim_description": "Minor scratch on bumper."
+          },
+          "expected_fraudulent": false,
+          "expected_max_score": 0.5
+        },
+        {
+          "test_name": "High Risk Amount Trigger",
+          "input": {
+            "claim_amount": 10001.0,
+            "claim_description": "Normal rear end."
+          },
+          "expected_fraudulent": true,
+          "expected_min_score": 0.8
+        },
+        {
+          "test_name": "High Risk Keyword Trigger",
+          "input": {
+            "claim_amount": 2000.0,
+            "claim_description": "Terrible whiplash from accident."
+          },
+          "expected_fraudulent": true,
+          "expected_min_score": 0.8
+        }
+      ]
+    }
+  ]
+}
